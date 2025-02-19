@@ -1,38 +1,37 @@
-.App {
+/* 부모 컨테이너 (빨간색 테두리) */
+.app-container {
+  border: 3px solid red;  /* 빨간색 테두리 */
+  padding: 20px;
+  width: 80%;
+  margin: 20px auto;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* 입력 폼 컨테이너 */
+.input-container {
+  margin-bottom: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* 자식 컨테이너 (초록색 테두리) */
+.student-list {
+  border: 3px solid green;  /* 초록색 테두리 */
+  padding: 10px;
+  width: 90%;
+  margin: 0 auto;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* 테이블 스타일 */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
 }
 
-.App-link {
-  color: #61dafb;
+th, td {
+  border: 1px solid black;
+  padding: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+th {
+  background-color: lightgray;
 }
